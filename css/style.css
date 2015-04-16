@@ -1,0 +1,1094 @@
+body {
+    font-size: 17px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: normal;
+    color: #000;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    line-height: 0.8;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/*main-header-start*/
+.main-header>.container {
+    width: 100%;
+    background-color: #000;
+}
+
+.main-nav {
+    margin: 0 auto;
+    width: 940px;
+    height: 72px;
+    background-color: #000;
+}
+
+.main-nav>ul {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.main-nav>ul>li {
+    display: inline-block;
+    margin-left: -2.5px;
+}
+
+.main-nav>ul>li>a {
+    padding: 27px 22px 20px 17px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 72px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.main-nav li:hover {
+    background-color: #242424;
+}
+
+.main-nav .active {
+    box-shadow: 0 25px 0 -19px #fff;
+}
+
+.main-nav>.user-bar {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.main-nav>.user-bar>a {
+    padding: 27px 22px 25px 17px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 72px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.main-nav>.user-bar>a:hover {
+    background-color: #242424;
+}
+
+.main-nav>.user-bar>a:before {
+    content: '';
+    padding: 5px 20px;
+    background-image: url(../img/bs-sprait_01.png);
+    background-position: 0px -46px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.user-bar>a:hover:before {
+    opacity: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/*main-header end*/
+
+/*breadcrumbs-section-start*/
+body>.container {
+    background-image: url(../img/barbershop-light-fon.jpg);
+    padding-bottom: 47px;
+}
+
+body>.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.article-name {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.breadcrumbs {
+    width: 940px;
+    margin: 25px auto 63px auto;
+}
+
+.breadcrumbs>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.breadcrumbs>ul>li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs>ul>li>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs>ul>li>span {
+    color: #aba9a7;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.breadcrumbs>ul>li>a:hover {
+    color: #aba9a7;
+}
+
+.breadcrumbs>ul>li>a:after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    margin-left: 15px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+/*breadcrumbs-section-end*/
+
+/*gallery-bardershop-item-page-start*/
+.con {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.gallery {
+    float: left;
+    width: 460px;
+}
+
+.gallery>ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.gallery>.js-main-img>li {
+    list-style: none;
+    display: none;
+}
+
+.gallery>.js-small-img>li {
+    display: table-cell;
+    list-style: none;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.gallery>.js-main-img>.active {
+    display: block;
+}
+
+.gallery img {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+}
+/*gallery-bardershop-item-page-end*/
+
+/*item-info-block-bardershop-item-page-start*/
+.item-info-block {
+    float: right;
+    width: 380px;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+.item-left {
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: left;
+    font-weight: bold;
+}
+
+.item-right {
+    float: right;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: left;
+    color: #aeaeae;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.item-info-block>p {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.item-price-bar {
+    width: 188px;
+    height: 43px;
+}
+
+.item-price-bar>.price {
+    float: left;
+    background-color: #e5e5e5;
+    width: 110px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item-price-bar>a {
+    float: right;
+    width: 78px;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 43px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item-price-bar>a:hover {
+    background-color: #663d15;
+}
+
+.item-info-block>h3 {
+    margin-top: 45px;
+    margin-bottom: 31px;
+}
+
+.item-set-list {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: bold;
+}
+
+.item-set-list>li {
+    margin-bottom: 5px;
+}
+
+.item-set-list>li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+/*item-info-block-bardershop-item-page-end*/
+
+/*main-footer-start*/
+
+.main-footer>.container {
+    background-image: url(../img/barbershop-dark-fon.jpg);
+}
+
+.main-footer>.border-shadow:before {
+    content: '';
+    background-image: url(../img/footer-shadow.png);
+    width: 100%;
+    display: inline-block;
+    height: 40px;
+}
+
+.main-footer>.container>.con {
+    height: 128px;
+    padding-top: 22px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.main-footer>.container>.con p {
+    margin: 0;
+}
+
+.con>.info-about-us {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.con>.info-about-us>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.con>.info-about-us>a:hover {
+    text-decoration: none;
+}
+
+.con>.develop {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.con>.social-btns {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.con>.social-btns>p {
+    text-align: center;
+}
+
+.con>.social-btns>ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.con>.social-btns>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+    width: 43px;
+    height: 43px;
+}
+
+.con>.social-btns>ul>li>a {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background-color: #000;
+    margin-right: 2px;
+}
+
+.con>.social-btns>ul>li>a:hover {
+    background-color: #fff;
+}
+
+.vk {
+    background-image: url(../img/bs-sprait_01.png);
+    background-position: -78px 8px;
+    background-repeat: no-repeat;
+}
+
+.vk:hover {
+    background-image: url(../img/images/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -78px -41px;
+}
+
+.fb {
+    background-image: url(../img/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -33px 8px;
+}
+
+.fb:hover {
+    background-image: url(../img/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -33px -41px;
+}
+
+.ig {
+    background-image: url(../img/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -122px 8px;
+}
+
+.ig:hover {
+    background-image: url(../img/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -122px -41px;
+}
+
+.con>.develop>p {
+    text-align: center;
+}
+
+.con>.develop>a {
+    width: 160px;
+    background-color: #000;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.con>.develop>a:hover {
+    background-color: #fff;
+    color: #000;
+}
+/*main-footer-end*/
+
+/*-------------------------bardershop-shop-start---------------------*/
+.filter-block {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.filter-block:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.filter {
+    float: left;
+    width: 25%;
+}
+
+.items-blocks {
+    float: right;
+    width: 75%;
+}
+
+.col {
+    float: right;
+}
+
+.col-4 {
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.item-info {
+    height: 286px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+.row>article:nth-child(3n+1) {
+    margin-right: 0px;
+}
+
+.item-name {
+    padding: 9px 16px 16px 16px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.item-price-bar {
+    margin: 0px 16px 16px 16px;
+}
+/*filter-block-start*/
+.group {
+    border: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+
+.filter>.group:nth-child(2)>legend:nth-child(1) {
+    padding-top: 50px;
+}
+
+.group>label {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+.group>label:hover {
+    color: #663d15;
+    cursor: pointer;
+}
+.group>label:active {
+    color: #b2b0ae;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox']+label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    border: 2px solid  #000;
+    position: relative;
+    bottom: 3px;
+    margin-right: 23px;
+    background-color: #fff;
+}
+
+input[type='checkbox']:checked+label:before {
+    content: '';
+    background-image: url(../img/bs-sprait_01.png);
+    background-repeat: no-repeat;
+    background-position: -46px -84px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']+label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid  #000;
+    border-radius: 50%;
+    margin-right: 23px;
+    background-color: #fff;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+input[type='radio']:checked+label:before {
+    content: '';
+    background-image: url(../img/bs-sprait_01.png);
+    background-position: -9px -84px;
+    background-repeat: no-repeat;
+}
+
+input[type='submit'] {
+    width: 112px;
+    height: 43px;
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+input[type='submit']:hover {
+    background-color: #663d15;
+}
+/*filter-block-end*/
+
+/*pegination-block-start*/
+.pagination {
+    float: left;
+}
+.pagination>ul {
+    list-style: none;
+    padding: 0;
+}
+.pagination>ul>li {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.pagination>ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    margin-right: 2px;
+}
+.pagination>ul>li>span {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    margin-right: 2px;
+}
+.pagination>ul>li .active {
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+}
+.pagination>ul>li>a:hover {
+    background-color: #663d15;
+}
+/*pegination-block-end*/
+/*-------------------------bardershop-shop-end---------------------*/
+
+/*-------------------------bardershop-price-start---------------------*/
+.main-title {
+    width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 70px;
+}
+.main-title:before {
+    content: '';
+    border: 2px solid #000;
+    width: 160px;
+    position: absolute;
+    top: 20px;
+    right: 590px;
+}
+.main-title:after {
+    content: '';
+    border: 2px solid #000;
+    width: 160px;
+    position: absolute;
+    top: 20px;
+    left: 590px;
+}
+.wrap {
+    width: 940px;
+    margin: 0 auto;
+}
+.colmn {
+    float: left;
+}
+.col8 {
+    width: 49.16%;
+}
+.col4 {
+    width: 33.33%;
+}
+.col-offset-2 {
+    margin-left: 17.5%;
+}
+.wrap>.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.use-list>h2 {
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.use-list>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.use-list>ul>li {
+    margin-bottom: 27px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.use-list>ul>li:before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    margin-left: 15px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.price-table>h2 {
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.prices {
+    width: 460px;
+    border-collapse: collapse;
+}
+.prices th, .prices td {
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+.prices th {
+    text-align: left;
+}
+.prices td {
+    text-align: center;
+}
+.discription {
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 940px;
+    margin-bottom: 40px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+.right-text {
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 100px;
+    width: 380px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+.left-text {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 380px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+.wraper:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/*-------------------------bardershop-shop-end---------------------*/
+
+/*-------------------------bardershop-index-start---------------------*/
+.main-container {
+    background: #111 url(../img/body-bg.jpg) no-repeat center top;
+    padding-bottom: 47px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    padding-top: 45px;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 368px;
+    height: 204px;
+}
+
+.features-row {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-title {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.features-item p {
+    margin: 10px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.features-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.index-content {
+    padding: 50px 80px;
+    color: #000;
+    background: url(../img/index-content-shadow.png) no-repeat center,
+    #f8f5f2 url(../img/pattern-white.jpg);
+}
+
+.content-column-left {
+    width: 350px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.content-column-right {
+    width: 300px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.content-column-left {
+    float: left;
+}
+
+.content-column-right {
+    float: right;
+}
+
+.content-column-title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.news-preview time {
+    text-transform: none;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:active {
+    background: #663d15;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn:disabled:hover {
+    background: #000;
+}
+
+.main-gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    border: 7px solid white;
+    background: #ccc;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.main-gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.appointment-form  input {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 106px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    background: #f9f6f3;
+    outline: none;
+}
+
+.appointment-form  input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form  input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+/*-------------------------bardershop-shop-end---------------------*/
+
+
+
+
+
