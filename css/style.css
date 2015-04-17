@@ -428,7 +428,7 @@ body>.container:after {
 }
 
 .vk:hover {
-    background-image: url(../img/images/bs-sprait_01.png);
+    background-image: url(../img/bs-sprait_01.png);
     background-repeat: no-repeat;
     background-position: -78px -41px;
 }
