@@ -1,6 +1,7 @@
+
 body {
     font-size: 17px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: normal;
     color: #000;
     line-height: 1;
@@ -10,97 +11,92 @@ body {
 
 h1 {
     font-size: 30px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
     line-height: 1;
     margin: 0;
-    text-transform: uppercase;
 }
 
 h2 {
     font-size: 30px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
     line-height: 1;
-    text-transform: uppercase;
     margin: 0;
 }
 
 h3 {
     font-size: 24px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
     line-height: 0.8;
-    text-transform: uppercase;
     margin: 0;
 }
-
-/*main-header-start*/
-.main-header>.container {
-    width: 100%;
-    background-color: #000;
+h1,h2,h3,a,p,div,span,input {
+    text-transform: uppercase;
 }
-
-.main-nav {
+.container {
     margin: 0 auto;
     width: 940px;
-    height: 72px;
+}
+/*main-header-start*/
+.main-header {
     background-color: #000;
 }
 
 .main-nav>ul {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     float: left;
+    font-size: 0;
+    width: 80%;
 }
 
 .main-nav>ul>li {
     display: inline-block;
-    margin-left: -2.5px;
+    vertical-align: top;
 }
 
 .main-nav>ul>li>a {
-    padding: 27px 22px 20px 17px;
+    padding: 28px 21px;
+    display: block;
     text-decoration: none;
     color: #fff;
-    line-height: 72px;
-    text-transform: uppercase;
+    font-weight: bold;
     font-size: 16px;
+    position: relative;
+    white-space: nowrap;
 }
 
-.main-nav li:hover {
+.main-nav>ul>li>a:hover,
+.user-bar>a:hover {
     background-color: #242424;
 }
 
-.main-nav .active {
-    box-shadow: 0 25px 0 -19px #fff;
-}
-
-.main-nav>.user-bar {
-    display: inline-block;
+.user-bar {
     float: right;
+    width: 20%;
     position: relative;
 }
 
-.main-nav>.user-bar>a {
-    padding: 27px 22px 25px 17px;
+.user-bar>a {
+    float: right;
     text-decoration: none;
-    color: #fff;
-    line-height: 72px;
-    text-transform: uppercase;
+    padding: 28px 20px 28px 54px;
+    font-weight: bold;
     font-size: 16px;
+    color: #fff;
 }
 
-.main-nav>.user-bar>a:hover {
-    background-color: #242424;
-}
-
-.main-nav>.user-bar>a:before {
+.user-bar>a:before {
     content: '';
-    padding: 5px 20px;
+    padding:15px;
+    position: absolute;
+    top: 20px;
+    right: 65px;
     background-image: url(../img/bs-sprait_01.png);
     background-position: 0px -46px;
     background-repeat: no-repeat;
@@ -111,6 +107,18 @@ h3 {
     opacity: 1;
 }
 
+.main-nav .active:before {
+    content: '';
+    position: absolute;
+    padding: 15px 0px 28px 0px;
+    display: inline-block;
+    width: 100%;
+    top:23px;
+    left: 1px;
+    box-shadow: 0 25px 0 -19px #fff;
+    vertical-align: top;
+}
+
 .clearfix:after {
     content: '';
     display: table;
@@ -119,25 +127,22 @@ h3 {
 /*main-header end*/
 
 /*breadcrumbs-section-start*/
-body>.container {
+.main-content {
     background-image: url(../img/barbershop-light-fon.jpg);
     padding-bottom: 47px;
 }
 
-body>.container:after {
+.main-content:after {
     content: '';
     display: table;
     clear: both;
 }
 
-.article-name {
-    width: 940px;
-    margin: 0 auto;
+.main-caption-name {
     padding-top: 55px;
 }
 
 .breadcrumbs {
-    width: 940px;
     margin: 25px auto 63px auto;
 }
 
@@ -149,6 +154,7 @@ body>.container:after {
 .breadcrumbs>ul>li {
     display: inline-block;
     margin-right: 10px;
+    vertical-align: top;
 }
 
 .breadcrumbs>ul>li>a {
@@ -156,14 +162,12 @@ body>.container:after {
     color: #000;
     font-weight: bold;
     font-size: 14px;
-    text-transform: uppercase;
 }
 
 .breadcrumbs>ul>li>span {
     color: #aba9a7;
     font-size: 14px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .breadcrumbs>ul>li>a:hover {
@@ -181,15 +185,11 @@ body>.container:after {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     margin-bottom: 2px;
+    vertical-align: top;
 }
 /*breadcrumbs-section-end*/
 
 /*gallery-bardershop-item-page-start*/
-.con {
-    width: 940px;
-    margin: 0 auto;
-}
-
 .gallery {
     float: left;
     width: 460px;
@@ -232,7 +232,6 @@ body>.container:after {
 .item-left {
     float: left;
     font-size: 14px;
-    text-transform: uppercase;
     line-height: 1.714;
     text-align: left;
     font-weight: bold;
@@ -241,7 +240,6 @@ body>.container:after {
 .item-right {
     float: right;
     font-size: 14px;
-    text-transform: uppercase;
     line-height: 1.714;
     text-align: left;
     color: #aeaeae;
@@ -258,7 +256,6 @@ body>.container:after {
     margin: 0;
     padding-top: 30px;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: bold;
     line-height: 24px;
     margin-bottom: 35px;
@@ -277,7 +274,6 @@ body>.container:after {
     text-align: center;
     line-height: 43px;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -290,7 +286,6 @@ body>.container:after {
     color: #fff;
     line-height: 43px;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -305,7 +300,6 @@ body>.container:after {
 
 .item-set-list {
     list-style: none;
-    text-transform: uppercase;
     padding: 0;
     font-size: 14px;
     line-height: 1.714;
@@ -327,24 +321,26 @@ body>.container:after {
             transform: rotate(45deg);
     margin-right: 10px;
     margin-bottom: 2px;
+    vertical-align: top;
 }
 /*item-info-block-bardershop-item-page-end*/
 
 /*main-footer-start*/
 
-.main-footer>.container {
+.main-footer {
     background-image: url(../img/barbershop-dark-fon.jpg);
 }
 
-.main-footer>.border-shadow:before {
+.main-footer:before {
     content: '';
     background-image: url(../img/footer-shadow.png);
     width: 100%;
     display: inline-block;
     height: 40px;
+    vertical-align: top;
 }
 
-.main-footer>.container>.con {
+.footer-wrap {
     height: 128px;
     padding-top: 22px;
     display: -webkit-flex;
@@ -355,69 +351,67 @@ body>.container:after {
             justify-content: space-between;
 }
 
-.main-footer>.container>.con p {
+.footer-wrap p {
     margin: 0;
 }
 
-.con>.info-about-us {
+.footer-wrap>.info-about-us {
     color: #fff;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
 }
 
-.con>.info-about-us>a {
+.footer-wrap>.info-about-us>a {
     color: #fff;
-    text-transform: uppercase;
 }
 
-.con>.info-about-us>a:hover {
+.footer-wrap>.info-about-us>a:hover {
     text-decoration: none;
 }
 
-.con>.develop {
+.develop {
     color: #fff;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
 }
 
-.con>.social-btns {
+.social-btns {
     color: #fff;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
 }
 
-.con>.social-btns>p {
+.social-btns>p {
     text-align: center;
 }
 
-.con>.social-btns>ul {
+.social-btns>ul {
     margin-top: 20px;
     padding: 0;
 }
 
-.con>.social-btns>ul>li {
+.social-btns>ul>li {
     list-style: none;
     display: inline-block;
     margin: 0 auto;
     width: 43px;
     height: 43px;
+    vertical-align: top;
 }
 
-.con>.social-btns>ul>li>a {
+.social-btn {
     display: inline-block;
     width: 43px;
     height: 43px;
     background-color: #000;
     margin-right: 2px;
+    vertical-align: top;
 }
 
-.con>.social-btns>ul>li>a:hover {
+.social-btn:hover {
     background-color: #fff;
 }
 
@@ -457,35 +451,29 @@ body>.container:after {
     background-position: -122px -41px;
 }
 
-.con>.develop>p {
+.footer-wrap>.develop>p {
     text-align: center;
 }
 
-.con>.develop>a {
+.footer-wrap>.develop>a {
     width: 160px;
     background-color: #000;
     margin-top: 20px;
     display: block;
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
     font-size: 14px;
     text-align: center;
     line-height: 43px;
 }
 
-.con>.develop>a:hover {
+.footer-wrap>.develop>a:hover {
     background-color: #fff;
     color: #000;
 }
 /*main-footer-end*/
 
 /*-------------------------bardershop-shop-start---------------------*/
-.filter-block {
-    width: 940px;
-    margin: 0 auto;
-}
-
 .filter-block:after {
     content: '';
     display: table;
@@ -529,7 +517,6 @@ body>.container:after {
     color: #000;
     font-weight: bold;
     font-size: 14px;
-    text-transform: uppercase;
 }
 
 .item-price-bar {
@@ -543,11 +530,10 @@ body>.container:after {
 
 legend {
     font-size: 24px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
     line-height: 20px;
-    text-transform: uppercase;
     margin-bottom: 33px;
 }
 
@@ -560,10 +546,9 @@ legend {
     vertical-align: top;
     margin-bottom: 18px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
 }
 .group>label:hover {
     color: #663d15;
@@ -613,6 +598,7 @@ input[type='radio']+label:before {
     position: relative;
     bottom: 3px;
     cursor: pointer;
+    vertical-align: top;
 }
 
 input[type='radio']:checked+label:before {
@@ -629,10 +615,9 @@ input[type='submit'] {
     border: 0;
     color: #fff;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     line-height: 1;
-    text-transform: uppercase;
     margin-top: 30px;
 }
 
@@ -651,7 +636,7 @@ input[type='submit']:hover {
 }
 .pagination>ul>li {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 .pagination>ul>li>a {
     display: inline-block;
@@ -663,9 +648,10 @@ input[type='submit']:hover {
     text-align: center;
     line-height: 43px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     margin-right: 2px;
+    vertical-align: top;
 }
 .pagination>ul>li>span {
     display: inline-block;
@@ -677,14 +663,15 @@ input[type='submit']:hover {
     text-align: center;
     line-height: 43px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     margin-right: 2px;
+    vertical-align: top;
 }
 .pagination>ul>li .active {
     background-color: #fff;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
 }
@@ -695,19 +682,18 @@ input[type='submit']:hover {
 /*-------------------------bardershop-shop-end---------------------*/
 
 /*-------------------------bardershop-price-start---------------------*/
-.main-title {
+.text-banner {
     width: 570px;
     margin: 0 auto;
     text-align: center;
     font-size: 48px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     position: relative;
     margin-bottom: 70px;
 }
-.main-title:before {
+.text-banner:before {
     content: '';
     border: 2px solid #000;
     width: 160px;
@@ -715,7 +701,7 @@ input[type='submit']:hover {
     top: 20px;
     right: 590px;
 }
-.main-title:after {
+.text-banner:after {
     content: '';
     border: 2px solid #000;
     width: 160px;
@@ -723,14 +709,106 @@ input[type='submit']:hover {
     top: 20px;
     left: 590px;
 }
-.wrap {
-    width: 940px;
-    margin: 0 auto;
+.col12 {
+ width: 940px;
 }
+
+.col11 {
+    width: 860px;
+}
+
+.col10 {
+    width: 780px;
+}
+
+.col9 {
+    width: 700px;
+}
+
+.col8 {
+    width: 620px;
+}
+
+.col7 {
+    width: 540px;
+}
+
+.col6 {
+    width: 460px;
+}
+
+.col5 {
+    width: 380px;
+}
+
+.col4 {
+    width: 300px;
+}
+
+.col3 {
+    width: 220px;
+}
+
+.col2 {
+    width: 140px;
+}
+
+.col1 {
+  width: 60px;
+}
+
+.offset12 {
+  margin-left: 980px;
+}
+
+.offset11 {
+  margin-left: 900px;
+}
+
+.offset10 {
+  margin-left: 820px;
+}
+
+.offset9 {
+  margin-left: 740px;
+}
+
+.offset8 {
+  margin-left: 660px;
+}
+
+.offset7 {
+  margin-left: 580px;
+}
+
+.offset6 {
+  margin-left: 500px;
+}
+
+.offset5 {
+  margin-left: 420px;
+}
+
+.offset4 {
+  margin-left: 340px;
+}
+
+.offset3 {
+  margin-left: 260px;
+}
+
+.offset2 {
+  margin-left: 180px;
+}
+
+.offset1 {
+  margin-left: 100px;
+}
+
 .colmn {
     float: left;
 }
-.col8 {
+.col6 {
     width: 49.16%;
 }
 .col4 {
@@ -739,18 +817,20 @@ input[type='submit']:hover {
 .col-offset-2 {
     margin-left: 17.5%;
 }
-.wrap>.row:after {
+
+.row:after {
     content: '';
     display: table;
     clear: both;
 }
-.use-list>h2 {
+.use-list>h2,
+.price-table>h2,
+.description  {
     font-size: 24px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
     margin: 0;
-    text-transform: uppercase;
     margin-bottom: 40px;
 }
 .use-list>ul {
@@ -761,10 +841,9 @@ input[type='submit']:hover {
 .use-list>ul>li {
     margin-bottom: 27px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     margin-bottom: 40px;
 }
 .use-list>ul>li:before {
@@ -780,15 +859,9 @@ input[type='submit']:hover {
     margin-bottom: 2px;
     margin-right: 10px;
     margin-left: 0px;
+    vertical-align: top;
 }
-.price-table>h2 {
-    font-size: 24px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
-    font-weight: bold;
-    color: #000;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
+
 .prices {
     width: 460px;
     border-collapse: collapse;
@@ -798,10 +871,9 @@ input[type='submit']:hover {
     padding: 10px 20px;
     border: 2px solid black;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
 }
 .prices th {
     text-align: left;
@@ -809,20 +881,7 @@ input[type='submit']:hover {
 .prices td {
     text-align: center;
 }
-.discription {
-    font-size: 24px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
-    font-weight: bold;
-    color: #000;
-    text-transform: uppercase;
-    margin: 0 auto;
-    width: 940px;
-    margin-bottom: 40px;
-}
-.wrapper {
-    margin: 0 auto;
-    width: 940px;
-}
+
 .right-text {
     padding: 0;
     margin: 0;
@@ -830,10 +889,9 @@ input[type='submit']:hover {
     margin-left: 100px;
     width: 380px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     line-height: 24px;
 }
 .left-text {
@@ -842,27 +900,18 @@ input[type='submit']:hover {
     float: left;
     width: 380px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     line-height: 24px;
 }
-.wraper:after {
-    content: '';
-    display: table;
-    clear: both;
-}
+
 /*-------------------------bardershop-shop-end---------------------*/
 
 /*-------------------------bardershop-index-start---------------------*/
 .main-container {
     background: #111 url(../img/body-bg.jpg) no-repeat center top;
     padding-bottom: 47px;
-}
-.wrapper {
-    margin: 0 auto;
-    width: 940px;
 }
 
 .logo {
@@ -905,10 +954,9 @@ input[type='submit']:hover {
 .features-item p {
     margin: 10px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #fff;
-    text-transform: uppercase;
     line-height: 24px;
 }
 
@@ -936,10 +984,9 @@ input[type='submit']:hover {
 
 .content-column-left {
     width: 350px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     line-height: 24px;
     font-size: 14px;
 }
@@ -948,7 +995,7 @@ input[type='submit']:hover {
     width: 300px;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     line-height: 24px;
     font-size: 14px;
 }
@@ -977,10 +1024,9 @@ input[type='submit']:hover {
 .news-preview li {
     margin-bottom: 25px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', 'Times New Roman';
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: bold;
     color: #000;
-    text-transform: uppercase;
     line-height: 24px;
 }
 
@@ -994,11 +1040,10 @@ input[type='submit']:hover {
     padding: 10px 33px;
     margin-right: 16px;
     font-size: 14px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-weight: 700;
     line-height: 24px;
     text-decoration: none;
-    text-transform: uppercase;
     text-align: center;
     color: #fff;
     background: #000;
@@ -1064,10 +1109,9 @@ input[type='submit']:hover {
     width: 106px;
     padding: 10px 15px;
     border: 2px solid #000;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans Narrow', 'Calibri', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    text-transform: uppercase;
     font-weight: bold;
     color: #000;
     background: #f9f6f3;
